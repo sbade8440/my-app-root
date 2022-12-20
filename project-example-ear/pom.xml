@@ -13,7 +13,7 @@
 
 	<artifactId>project-example-ear</artifactId>
 	<packaging>ear</packaging>
-	<name>Project Example</name>
+	<name>Example EAR</name>
 	<properties>
 		<version.maven.release.plugin>2.5.2</version.maven.release.plugin>
 		<version.maven-ear-plugin>2.10.1</version.maven-ear-plugin>
