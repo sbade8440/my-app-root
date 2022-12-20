@@ -4,7 +4,7 @@
 
   <groupId>com.example</groupId>
   <artifactId>project-example</artifactId>
-  <version>0.0.1</version>
+  <version>${revision}</version>
   <packaging>pom</packaging>
   <name>Project Example</name>
 
@@ -31,7 +31,7 @@
 		<connection>scm:git:git@github.com:sbade8440/project-example.git</connection>
 		<developerConnection>scm:git:git@github.com:sbade8440/project-example.git</developerConnection>
 		<url>https://github.com/sbade8440/project-example</url>
-	  <tag>v0.0.1</tag>
+	  <tag>HEAD</tag>
   </scm>
 
   <modules>
