@@ -1,0 +1,4 @@
+[submodule "project-example-ui"]
+	path = project-example-ui
+	url = ../my-app.git
+	branch = master

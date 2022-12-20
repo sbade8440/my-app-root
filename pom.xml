@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.example</groupId>
+  <artifactId>project-example</artifactId>
+  <version>${revision}</version>
+  <packaging>pom</packaging>
+  <name>project-example</name>
+
+	<properties>
+		<java.version>1.8</java.version>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    <revision>0.0.1-SNAPSHOT</revision>
+	</properties>
+	<distributionManagement>
+       <repository>
+         <id>internal.repo</id>
+         <name>Internal repo</name>
+         <url>file:///Users/sagar/Development/tmp/test-rel-release</url>
+       </repository>
+   </distributionManagement>
+
+	<scm>
+		<connection>scm:git:git@github.com:sbade8440/project-example.git</connection>
+		<developerConnection>scm:git:git@github.com:sbade8440/project-example.git</developerConnection>
+		<url>https://github.com/sbade8440/project-example</url>
+	  <tag>HEAD</tag>
+  </scm>
+
+  <modules>
+    <module>project-example-ear</module>
+    <module>project-example-ui</module>
+    <module>project-example-war</module>
+  </modules>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-release-plugin</artifactId>
+        <version>3.0.0-M7</version>
+        <configuration>
+          <tagNameFormat>v@{project.version}</tagNameFormat>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>
