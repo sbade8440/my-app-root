@@ -113,7 +113,7 @@
 					</execution>
 				</executions>
 				<configuration>
-					<workingDirectory>../project-example-ui</workingDirectory>
+					<workingDirectory>../my-app-ui</workingDirectory>
 				</configuration>
 			</plugin>
 			<plugin>
@@ -128,7 +128,7 @@
 							<outputDirectory>${project.build.directory}/classes/static/</outputDirectory>
 							<resources>
 								<resource>
-									<directory>../project-example-ui/build</directory>
+									<directory>../my-app-ui/build</directory>
 								</resource>
 							</resources>
 						</configuration>
